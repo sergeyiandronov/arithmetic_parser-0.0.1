@@ -32,10 +32,10 @@ int main() {
     else if (com=='^'){
         cout << (x^y);
     }
-    else if (com=='<')&&(com2==com){
+    else if ((com=='<')&&(com2==com)){
         cout << (x<<y);
     }
-    else if (com=='>')&&(com2==com){
+    else if ((com=='>')&&(com2==com)){
         cout << (x>>y);
     }else {cout<<"wrong formula";}
     cin.get();
