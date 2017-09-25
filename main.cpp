@@ -2,42 +2,42 @@
 using namespace std;
 int main() {
     int x,y;
-    char com;
+    char com,com2;
     cin >>x >> com;
     if ((com=='>')||(com=='<')){
-        cin>>com>>y;
+        cin>>com2>>y;
     }else{cin>>y;}
     if (com=='+'){
       cout << x+y;
     }
-    if (com=='-'){
+    else if (com=='-'){
         cout << x-y;
     }
-    if (com=='*'){
+    else if (com=='*'){
         cout << x*y;
     }
-    if (com=='/'){
+    else if (com=='/'){
         cout << (double)x/y;
     }
 
-    if (com=='%'){
+    else if (com=='%'){
         cout << x%y;
     }
-    if (com=='&'){
+    else if (com=='&'){
         cout << (x & y);
     }
-    if (com=='|'){
+    else if (com=='|'){
         cout << ( x|y);
     }
-    if (com=='^'){
+    else if (com=='^'){
         cout << (x^y);
     }
-    if (com=='<'){
+    else if (com=='<')&&(com2==com){
         cout << (x<<y);
     }
-    if (com=='>'){
+    else if (com=='>')&&(com2==com){
         cout << (x>>y);
-    }
+    }else {cout<<"wrong formula";}
     cin.get();
     return 0;
 }
